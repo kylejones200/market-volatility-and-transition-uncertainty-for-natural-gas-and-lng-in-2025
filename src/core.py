@@ -32,7 +32,7 @@ def analyze_price_relationships(df: pd.DataFrame, price_cols: list) -> Dict:
     }
 
 def plot_volatility_analysis(df: pd.DataFrame, price_cols: list, title: str, output_path: Path):
- """Plot volatility analysis """
+    """Plot volatility analysis """
     fig, ax = plt.subplots(figsize=(10, 6))
     
     returns = df[price_cols].pct_change().dropna()
