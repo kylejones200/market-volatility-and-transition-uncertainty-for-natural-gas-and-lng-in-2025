@@ -9,9 +9,9 @@ canonical_link: "https://medium.com/@kyle-t-jones/market-volatility-and-transiti
 response to market forces, policy shifts, and geopolitical tensions.
 
 ### Market Volatility and Transition Uncertainty for Natural Gas and LNG in 2025
-The global gas and liquefied natural gas (LNG) landscape changing in response to **market forces**, **policy shifts**, and **geopolitical tensions**.
+The global gas and liquefied natural gas (LNG) landscape changing in response to market forces, policy shifts, and geopolitical tensions.
 
-The [**Biden administration's pause on new LNG export permits**](https://www.reuters.com/business/energy/us-restricts-lng-exports-environmental-push-2024-01-10/) in 2024 over **environmental concerns. The Trump administration** is likely to look issue permits again for energy security. Europe still needs **non-Russian gas and** Asia's demand for LNG continues to grow. This means US Nat Gas supplies remain valuable and needed for global energy markets. However, the road ahead is still uncertain.
+The [Biden administration's pause on new LNG export permits](https://www.reuters.com/business/energy/us-restricts-lng-exports-environmental-push-2024-01-10/) in 2024 over environmental concerns. The Trump administration is likely to look issue permits again for energy security. Europe still needs non-Russian gas and Asia's demand for LNG continues to grow. This means US Nat Gas supplies remain valuable and needed for global energy markets. However, the road ahead is still uncertain.
 
 
 <figcaption>Pricing data from FRED. Graph made by the author</figcaption>
@@ -35,34 +35,34 @@ More contracts changing hands means trading is a competitive differentiator. Tra
 ### Challenges for the Next Wave of U.S. LNG Projects
 The next generation of U.S. LNG projects faces a distinctly different set of challenges:
 
-- **Environmental Permitting**: Increasingly stringent environmental reviews delay project timelines.
-- **Infrastructure Constraints**: Limited pipeline and port capacity creates bottlenecks.
-- **Cost Inflation**: Rising material and labor costs are forcing companies to rethink capital allocation strategies.
+- Environmental Permitting: Increasingly stringent environmental reviews delay project timelines.
+- Infrastructure Constraints: Limited pipeline and port capacity creates bottlenecks.
+- Cost Inflation: Rising material and labor costs are forcing companies to rethink capital allocation strategies.
 
 These challenges underscore the need for more innovative and resilient approaches to project development.
 
 ### Strategic Imperatives for Success
-For industry leaders, success in this evolving landscape requires **multifaceted strategies**:
+For industry leaders, success in this evolving landscape requires multifaceted strategies:
 
-**Portfolio Resilience:** Geographic diversification, flexible contract structures, and adaptable infrastructure are essential for navigating market volatility.
+Portfolio Resilience: Geographic diversification, flexible contract structures, and adaptable infrastructure are essential for navigating market volatility.
 
-**Technology Integration:** Advanced technologies for **emissions monitoring** and **analytics** have become indispensable for maintaining competitiveness and meeting regulatory demands.
+Technology Integration: Advanced technologies for emissions monitoring and analytics have become indispensable for maintaining competitiveness and meeting regulatory demands.
 
-**Stakeholder Engagement:** Navigating relationships with environmental groups, local communities, investors, and policymakers requires transparency and sophistication. Companies must demonstrate credible carbon mitigation strategies to earn stakeholder trust.
+Stakeholder Engagement: Navigating relationships with environmental groups, local communities, investors, and policymakers requires transparency and sophistication. Companies must demonstrate credible carbon mitigation strategies to earn stakeholder trust.
 
-**Cost Competitiveness:** Maintaining cost discipline is critical, even as companies invest in new capabilities to adapt to a changing market.
+Cost Competitiveness: Maintaining cost discipline is critical, even as companies invest in new capabilities to adapt to a changing market.
 
 ### Opportunities Amid Challenges
 Despite mounting environmental pressures, policy uncertainty, and market volatility, opportunities abound for companies that can innovate and adapt.
 
-The shift toward **carbon-neutral LNG** opens doors for companies with robust decarbonization strategies.
+The shift toward carbon-neutral LNG opens doors for companies with robust decarbonization strategies.
 
-**Emerging markets** in Asia and Africa present new growth opportunities for LNG demand.
+Emerging markets in Asia and Africa present new growth opportunities for LNG demand.
 
-Advances in **liquefaction technology** and **carbon capture and storage (CCS)** offer pathways to more sustainable operations.
+Advances in liquefaction technology and carbon capture and storage (CCS) offer pathways to more sustainable operations.
 
 ### The Evolving "Golden Age of Gas"
-What we're witnessing is not the end of the **"Golden Age of Gas"** but its evolution into something more complex and sophisticated.
+What we're witnessing is not the end of the "Golden Age of Gas" but its evolution into something more complex and sophisticated.
 
 The winners in this new age of gas will be those who:
 

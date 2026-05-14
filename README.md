@@ -29,10 +29,10 @@ Edit `config.yaml` to customize:
 
 ## Analysis Features
 
-- **Volatility Calculation**: Rolling window volatility
-- **Correlation Analysis**: Price relationships
-- **Trend Identification**: Price movements over time
-- **Risk Assessment**: Volatility patterns
+- Volatility Calculation: Rolling window volatility
+- Correlation Analysis: Price relationships
+- Trend Identification: Price movements over time
+- Risk Assessment: Volatility patterns
 
 ## Caveats
 
