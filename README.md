@@ -1,5 +1,9 @@
 # Natural Gas and LNG Volatility Analysis
 
+Published: yes
+Medium: [https://medium.com/@kyle-t-jones/market-volatility-and-transition-uncertainty-for-natural-gas-and-lng-in-2025-51d972f4668a](https://medium.com/@kyle-t-jones/market-volatility-and-transition-uncertainty-for-natural-gas-and-lng-in-2025-51d972f4668a)
+
+
 This project analyzes volatility and correlations in natural gas and LNG prices.
 
 ## Project Structure
