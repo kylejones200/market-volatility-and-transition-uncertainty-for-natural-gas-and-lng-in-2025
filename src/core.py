@@ -1,48 +1,58 @@
 """Core functions for natural gas and LNG volatility analysis."""
 
-import pandas as pd
-from pathlib import Path
-import matplotlib.pyplot as plt
 import logging
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(message)s')
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+
 
 def calculate_volatility(returns: pd.Series, window: int = 30) -> pd.Series:
     """Calculate rolling volatility."""
     return returns.rolling(window=window).std()
 
+
 def calculate_correlation_matrix(df: pd.DataFrame) -> pd.DataFrame:
     """Calculate correlation matrix for price series."""
     return df.corr()
 
+
 def analyze_price_relationships(df: pd.DataFrame, price_cols: list) -> dict:
     """Analyze relationships between price series."""
     correlations = df[price_cols].corr()
-    
+
     returns = df[price_cols].pct_change().dropna()
     volatilities = {col: returns[col].std() for col in price_cols}
-    
+
     return {
-        'correlations': correlations,
-        'volatilities': volatilities,
-        'mean_prices': df[price_cols].mean().to_dict()
+        "correlations": correlations,
+        "volatilities": volatilities,
+        "mean_prices": df[price_cols].mean().to_dict(),
     }
 
-def plot_volatility_analysis(df: pd.DataFrame, price_cols: list, title: str, output_path: Path, plot: bool = False):
-    """Plot volatility analysis """
+
+def plot_volatility_analysis(
+    df: pd.DataFrame,
+    price_cols: list,
+    title: str,
+    output_path: Path,
+    plot: bool = False,
+):
+    """Plot volatility analysis"""
     if plot:
         fig, ax = plt.subplots(figsize=(10, 6))
-    
+
         returns = df[price_cols].pct_change().dropna()
         for col in price_cols:
             vol = calculate_volatility(returns[col])
             ax.plot(vol.index, vol.values, label=col, linewidth=1.2, alpha=0.8)
-    
+
         ax.set_xlabel("Time")
         ax.set_ylabel("Volatility")
-        ax.legend(loc='best')
-    
+        ax.legend(loc="best")
+
         plt.savefig(output_path, dpi=100, bbox_inches="tight")
         plt.close()
-
