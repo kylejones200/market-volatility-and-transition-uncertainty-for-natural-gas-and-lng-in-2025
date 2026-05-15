@@ -18,7 +18,7 @@ def load_config(config_path: Path = None) -> dict:
     if config_path is None:
         config_path = Path(__file__).parent / 'config.yaml'
     
-    with open(config_path, 'r') as f:
+    with open(config_path) as f:
         return yaml.safe_load(f)
 
 def main():
@@ -51,11 +51,11 @@ def main():
     
         results = analyze_price_relationships(df, config['data']['price_columns'])
     
-    logging.info(f"\nVolatilities:")
+    logging.info("\nVolatilities:")
     for col, vol in results['volatilities'].items():
         logging.info(f"  {col}: {vol:.4f}")
     
-    logging.info(f"\nCorrelations:")
+    logging.info("\nCorrelations:")
     logging.info(results['correlations'])
     
     corr_value = results['correlations'].iloc[0, 1]

@@ -1,9 +1,7 @@
 """Core functions for natural gas and LNG volatility analysis."""
 
-import numpy as np
 import pandas as pd
 from pathlib import Path
-from typing import Dict
 import matplotlib.pyplot as plt
 import logging
 
@@ -18,7 +16,7 @@ def calculate_correlation_matrix(df: pd.DataFrame) -> pd.DataFrame:
     """Calculate correlation matrix for price series."""
     return df.corr()
 
-def analyze_price_relationships(df: pd.DataFrame, price_cols: list) -> Dict:
+def analyze_price_relationships(df: pd.DataFrame, price_cols: list) -> dict:
     """Analyze relationships between price series."""
     correlations = df[price_cols].corr()
     
