@@ -43,3 +43,11 @@ Edit `config.yaml` to customize:
 - By default, generates synthetic price data.
 - Volatility depends on window size.
 - Correlations may vary over time periods.
+
+## Disclaimer
+
+Educational/demo code only. Not financial, safety, or engineering advice. Use at your own risk. Verify results independently before any production or operational use.
+
+## License
+
+MIT — see [LICENSE](LICENSE).

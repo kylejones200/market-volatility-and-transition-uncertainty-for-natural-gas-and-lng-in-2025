@@ -42,17 +42,19 @@ def plot_volatility_analysis(
     plot: bool = False,
 ):
     """Plot volatility analysis"""
-    if plot:
-        fig, ax = plt.subplots(figsize=(10, 6))
+    if not plot:
+        return
 
-        returns = df[price_cols].pct_change().dropna()
-        for col in price_cols:
-            vol = calculate_volatility(returns[col])
-            ax.plot(vol.index, vol.values, label=col, linewidth=1.2, alpha=0.8)
+    fig, ax = plt.subplots(figsize=(10, 6))
 
-        ax.set_xlabel("Time")
-        ax.set_ylabel("Volatility")
-        ax.legend(loc="best")
+    returns = df[price_cols].pct_change().dropna()
+    for col in price_cols:
+        vol = calculate_volatility(returns[col])
+        ax.plot(vol.index, vol.values, label=col, linewidth=1.2, alpha=0.8)
 
-        plt.savefig(output_path, dpi=100, bbox_inches="tight")
-        plt.close()
+    ax.set_xlabel("Time")
+    ax.set_ylabel("Volatility")
+    ax.legend(loc="best")
+
+    plt.savefig(output_path, dpi=100, bbox_inches="tight")
+    plt.close()
