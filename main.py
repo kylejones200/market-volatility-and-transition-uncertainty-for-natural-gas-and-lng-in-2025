@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 
 
-def load_config(config_path: Path = None) -> dict:
+def load_config(config_path: Path | None = None) -> dict:
     """Load configuration from YAML file."""
     if config_path is None:
         config_path = Path(__file__).parent / "config.yaml"
@@ -39,7 +39,6 @@ def main():
         "--output-dir", type=Path, default=None, help="Output directory"
     )
     args = parser.parse_args()
-
     config = load_config(args.config)
     output_dir = (
         Path(args.output_dir)
@@ -47,7 +46,6 @@ def main():
         else Path(config["output"]["figures_dir"])
     )
     output_dir.mkdir(exist_ok=True)
-
     if args.data_path and args.data_path.exists():
         df = pd.read_csv(args.data_path)
     elif config["data"]["generate_synthetic"]:
@@ -60,7 +58,6 @@ def main():
             np.random.normal(0, 0.1, config["data"]["n_periods"])
         )
         lng = natural_gas * 1.2 + np.random.normal(0, 0.2, config["data"]["n_periods"])
-
         df = pd.DataFrame(
             {
                 "date": dates,
@@ -70,7 +67,6 @@ def main():
         )
     else:
         raise ValueError("No data source specified")
-
         results = analyze_price_relationships(df, config["data"]["price_columns"])
 
     logging.info("\nVolatilities:")
@@ -79,7 +75,6 @@ def main():
 
     logging.info("\nCorrelations:")
     logging.info(results["correlations"])
-
     corr_value = results["correlations"].iloc[0, 1]
     if abs(corr_value) > config["analysis"]["correlation_threshold"]:
         logging.info(f"\n✓ Strong correlation detected: {corr_value:.4f}")
@@ -90,7 +85,6 @@ def main():
         "Natural Gas and LNG Volatility Analysis",
         output_dir / "volatility_analysis.png",
     )
-
     logging.info(f"\nAnalysis complete. Figures saved to {output_dir}")
 
 

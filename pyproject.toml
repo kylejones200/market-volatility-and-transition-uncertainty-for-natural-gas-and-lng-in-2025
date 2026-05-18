@@ -3,6 +3,7 @@ name = "market-volatility-and-transition-uncertainty-for-n"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "pydantic>=2.10.0",
     "arch>=8.0.0",
     "matplotlib>=3.10.9",
     "numpy>=2.4.4",
@@ -14,3 +15,7 @@ dependencies = [
     "seaborn>=0.13.2",
     "statsmodels>=0.14.6",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
