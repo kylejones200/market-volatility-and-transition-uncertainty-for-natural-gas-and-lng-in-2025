@@ -6,6 +6,14 @@ Medium: [https://medium.com/@kyle-t-jones/market-volatility-and-transition-uncer
 
 This project analyzes volatility and correlations in natural gas and LNG prices.
 
+## Business context
+
+The global gas and liquefied natural gas (LNG) landscape changing in response to market forces, policy shifts, and geopolitical tensions.
+
+The [Biden administration's pause on new LNG export permits](https://www.reuters.com/business/energy/us-restricts-lng-exports-environmental-push-2024-01-10/) in 2024 over environmental concerns. The Trump administration is likely to look issue permits again for energy security. Europe still needs non-Russian gas and Asia's demand for LNG continues to grow. This means US Nat Gas supplies remain valuable and needed for global energy markets. However, the road ahead is still uncertain.
+
+Asia continues to drive global LNG demand, but its approach is evolving. China has shifted toward a balanced strategy that leverages both spot market optimization and long-term contracts. Japan and South Korea are leading the push for lower-carbon LNG solutions, integrating [carbon-neutral LNG](https://www.spglobal.com/commodityinsights/en/market-insights/latest-news/natural-gas/041821-carbon-neutral-lng-finds-niche-in-japan-south-korea) into their energy mixes. Emerging markets like Vietnam and Thailand are rapidly building import infrastructure, signaling their commitment to natural gas as a key transitional fuel.
+
 ## Project Structure
 
 ```
